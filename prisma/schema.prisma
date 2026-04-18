@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model SavedTrack {
+  id        String   @id @default(uuid())
+  videoId   String   @unique
+  title     String
+  channel   String
+  thumbnail String
+  createdAt DateTime @default(now())
+}
