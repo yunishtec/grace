@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useMusicStore } from '@/store/useMusicStore';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
